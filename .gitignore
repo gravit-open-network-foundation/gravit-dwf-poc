@@ -19,3 +19,7 @@ compile_commands.json
 *.out
 
 demo
+.venv/
+.deps/
+__pycache__/
+.pytest_cache/

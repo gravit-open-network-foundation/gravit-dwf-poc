@@ -1,0 +1,44 @@
+[
+ {
+  "scenario": "Basket corroborated by two oracles, LTV within limit",
+  "request": "req-01",
+  "outcome": "APPROVED",
+  "reason": "LTV 37.7% on independently verified value 53,100.00 USD"
+ },
+ {
+  "scenario": "Loan above the LTV limit",
+  "request": "req-02",
+  "outcome": "REJECTED",
+  "reason": "LTV 56.5% above 40%"
+ },
+ {
+  "scenario": "Agent marks a position above what oracles confirm",
+  "request": "req-03",
+  "outcome": "REJECTED",
+  "reason": "mark price not independently corroborated: ['FED-CUT-DEC26']"
+ },
+ {
+  "scenario": "Agent overstates the basket value",
+  "request": "req-04",
+  "outcome": "REJECTED",
+  "reason": "agent declared 61,065.00 USD, verified value is 53,100.00 USD"
+ },
+ {
+  "scenario": "Prices confirmed by one oracle only",
+  "request": "req-05",
+  "outcome": "REJECTED",
+  "reason": "mark price not independently corroborated: ['FED-CUT-DEC26', 'BTC-150K-2026', 'EU-AIACT-FINES-2026']"
+ },
+ {
+  "scenario": "Resolved market used as collateral",
+  "request": "req-06",
+  "outcome": "REJECTED",
+  "reason": "market 'OLD-ELECTION-25' is resolved or halted"
+ },
+ {
+  "scenario": "Basket concentrated in one market",
+  "request": "req-07",
+  "outcome": "REJECTED",
+  "reason": "concentration 91% above 50%"
+ }
+]
