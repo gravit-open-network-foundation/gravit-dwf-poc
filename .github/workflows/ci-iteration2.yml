@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the public Gravit Verifier (pinned tag)
+        run: make setup PYTHON=python
+      - name: Tests
+        run: make test
+      - name: Pilot is reproducible (results must match byte for byte)
+        run: |
+          make run
+          git diff --exit-code results/

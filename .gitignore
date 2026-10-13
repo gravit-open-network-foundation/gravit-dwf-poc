@@ -8,7 +8,8 @@ build/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
+/build/Makefile
+**/CMakeFiles/**/Makefile
 compile_commands.json
 
 # Build artifacts
@@ -19,3 +20,7 @@ compile_commands.json
 *.out
 
 demo
+.venv/
+.deps/
+__pycache__/
+.pytest_cache/
