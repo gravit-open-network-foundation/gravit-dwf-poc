@@ -7,7 +7,7 @@ and declares their value. The gate never trusts the agent's valuation:
 1. Hard policy: allowed markets only, no resolved or halted market as
    collateral, loan-to-value cap, per-market concentration cap.
 2. Every position's mark price must be a "Verified Fact" for the public Gravit
-   Verifier v0.5.0: signed quotes from at least two independent, registered
+   Verifier v0.6.0: signed quotes from at least two independent, registered
    price oracles, bound to exactly (market, outcome, price, as_of), fresh.
 3. The gate re-values the basket from those corroborated prices and compares
    with the agent's declared value; an overstatement beyond tolerance is
