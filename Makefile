@@ -10,7 +10,10 @@ setup:
 run:
 	$(PY) -m scenarios.run
 
+observe:
+	$(PY) -m scenarios.observe
+
 test:
 	$(PY) -m pytest -q
 
-.PHONY: setup run test
+.PHONY: setup run observe test
