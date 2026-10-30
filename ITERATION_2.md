@@ -1,7 +1,7 @@
 # Iteration 2 — verifiable collateral for prediction-market positions
 
 Agreed with DWF (Andrei Grachev, Managing Partner) in October 2026. Builds the core of the idea
-on the public [Gravit Verifier](https://github.com/gravit-open-network-foundation/verifier) v0.6.0;
+on the public [Gravit Verifier](https://github.com/gravit-open-network-foundation/verifier) v0.7.0;
 the earlier concept material stays in the repository for the record (see CORRECTION.md).
 
 An AI agent proposes a loan against a basket of prediction-market positions. The gate
