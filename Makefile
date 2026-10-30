@@ -1,4 +1,4 @@
-VERIFIER_TAG := v0.6.0
+VERIFIER_TAG := v0.7.0
 PYTHON ?= python3
 PY := .venv/bin/python
 
